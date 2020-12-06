@@ -3,10 +3,10 @@ html,body{
   padding: 0;
   width: 100%;
   height: 100%;
-  background: url(/assets/images/login_bg.jpg) no-repeat center;
+  background: url(../../assets/images/login_bg.jpg) no-repeat center;
   background-size: cover;
 }
-.login_box{
+.login_reg_box{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -18,5 +18,26 @@ html,body{
 }
 .login_title{
   height: 60px;
-  background: url(/assets/images/login_title.png) no-repeat center;
+  background: url(../../assets/images/login_title.png) no-repeat center;
+}
+.reg_box{
+  display: none;
+}
+#form_box{
+  margin: 0px 20px;
+}
+#form_box a{
+  display: flex;
+  justify-content: flex-end;
+}
+.layui-form-item{
+  position: relative;
+}
+.layui-icon{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.layui-input{
+  padding-left: 33px;
 }
