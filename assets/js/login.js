@@ -26,7 +26,7 @@ $(function () {
   $('#enroll').on('submit', function (e) {
     e.preventDefault()
     var data={ username: $('#enroll [name=username]').val(), password: $('#enroll [name=password]').val() }
-    $.post('http://ajax.frontend.itheima.net/api/reguser',data, function (res) {
+    $.post('/api/reguser',data, function (res) {
       if (res.status !== 0) {
         return layer.msg(res.message)
       }
@@ -40,7 +40,7 @@ $(function () {
   $('#loginID').on('submit',function(e){
     e.preventDefault()
     $.ajax({
-      url:'http://ajax.frontend.itheima.net/api/login',
+      url:'/api/login',
       method:'post',
       data:$(this).serialize(),
       success:function(res){
