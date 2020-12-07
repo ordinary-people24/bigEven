@@ -18,8 +18,8 @@
         <ul class="layui-nav layui-layout-right">
           <li class="layui-nav-item">
             <a href="javascript:;">
-              <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-              <span id="span">w</span>
+              <img src="http://t.cn/RCzsdCq" class="layui-nav-img"/>
+              <span class="span">x</span>
               个人中心
             </a>
             <dl class="layui-nav-child">
@@ -28,7 +28,8 @@
               <dd><a href="">重置密码</a></dd>
             </dl>
           </li>
-          <li class="layui-nav-item"><a href=""><span class="iconfont icon-tuichu"></span>退出</a></li>
+          <li class="layui-nav-item"><a href="javascript:;"
+            id="btnloginout"><span class="iconfont icon-tuichu"></span>退出</a></li>
         </ul>
       </div>
       
@@ -37,8 +38,8 @@
           <ul class="layui-nav layui-nav-tree"  lay-filter="test"  lay-shrink='all'>
             <div id="personal">
               <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-              <span id="span">w</span>
-              个人中心
+              <span class="span">x</span>
+              <span id="welcome"></span>
             </div>
             <li class="layui-nav-item layui-this"><a href="./home/dashboard.html" target="mb"><span class="iconfont icon-home"></span>首页</a></li>
             <li class="layui-nav-item">
@@ -52,7 +53,7 @@
             <li class="layui-nav-item">
               <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
               <dl class="layui-nav-child">
-                <dd><a href="javascript:;"><i class="layui-icon layui-icon-user"></i>  基本资料</a></dd>
+                <dd><a href="../code/home/baseinfo.html" target='mb'><i class="layui-icon layui-icon-user"></i>  基本资料</a></dd>
                 <dd><a href="javascript:;"><i class="layui-icon layui-icon-face-smile"></i>  更换头像</a></dd>
                 <dd><a href="javascript:;"><i class="layui-icon layui-icon-set"></i>  重置密码</a></dd>
               </dl>
@@ -74,5 +75,8 @@
       </div>
     </div>
     <script src="./assets/lib/layui/layui.all.js"></script>
+    <script src="./assets/lib/jquery.js"></script>
+    <script src="./assets/js/baseAPI.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
